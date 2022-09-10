@@ -14,3 +14,7 @@
 .flex-column{
     flex-direction: column;
 }
+
+.front{
+    z-index: 200;
+}

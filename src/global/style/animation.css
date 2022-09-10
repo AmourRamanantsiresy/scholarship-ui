@@ -1,3 +1,8 @@
+html,
+body{
+    scroll-behavior: smooth;
+}
+
 .toTop {
     position: relative;
     top: 3rem;
@@ -70,21 +75,25 @@
 }
 
 .wait-1{
-    animation-delay: 1s;
+    animation-delay: 0.1s;
 }
 
 .wait-2{
-    animation-delay: 2s;
+    animation-delay: 0.2s;
 }
 
 .wait-3{
-    animation-delay: 3s;
+    animation-delay: 0.3s;
 }
 
 .wait-4{
-    animation-delay: 4s;
+    animation-delay: 0.4s;
 }
 
 .wait-5{
-    animation-delay: 5s;
+    animation-delay: 0.5s;
+}
+
+.op-0{
+    opacity: 0;
 }

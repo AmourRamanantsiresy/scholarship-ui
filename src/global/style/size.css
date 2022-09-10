@@ -15,7 +15,20 @@
     width: 50vw;
 }
 
+.half-inline{
+    width: 50vw;
+}
+
+.half-block{
+    height: 100vh;
+}
+
 .quarter{
     heigth: 50vh;
     width: 50vw;
+}
+
+.btn-home{
+    height: 3rem;
+    width: 20rem;
 }

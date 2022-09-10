@@ -1,13 +1,9 @@
-import React, {FC} from 'react';
-import {Autocomplete, Button, Dialog, Pagination, Pane, TextInput} from "evergreen-ui";
+import React from 'react';
 
-const Login: FC = () => {
-    const [isShown, setIsShown] = React.useState(false);
 
-    return (
-        <div>
-        </div>
-    );
-};
 
+const Login = () => (
+    <div>
+    </div>
+);
 export default Login;

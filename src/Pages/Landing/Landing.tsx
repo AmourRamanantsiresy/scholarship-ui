@@ -1,44 +1,22 @@
-import {Layout, Row, Col, Typography, Avatar, Divider, Button, Space} from "antd";
-import {FC} from "react";
-// @ts-ignore
-import image from "../../assets/bg1.jpg";
-import {Divisor} from "../../Common/Shape"
-import {yellow} from "@ant-design/colors";
+import {Layout, Row, Typography} from "antd";
+import {FC, useContext, useEffect} from "react";
+import Banner from "./Banner";
+import Us from "./Us";
 
-const {Header, Content, Footer} = Layout;
+const {Content} = Layout;
 const {Title, Text} = Typography;
 
 const Landing: FC = () => {
     return (
         <Layout>
             <Content>
-                <Row className="full bg-light" align="middle">
-                    <Col span={3}></Col>
-                    <Col span={8}>
-                        <Space direction="vertical" size="large">
-                            <Content>
-                                <Row align="middle">
-                                    <Title className="wait-1 fs-title toRight">Scholarship</Title>
-                                    <Divisor className="wait-2 toBottom"/>
-                                    <Text className="wait-2 toLeft">for everyone</Text>
-                                </Row>
-                                <Text className="toTop wait-3">
-                                    Do you wanna study in another country?
-                                </Text>
-                            </Content>
-                            <Space size="large">
-                                <Button style={{background: yellow[3]}} className="toRight wait-4" type="primary" size="large" shape="round">
-                                    Get Started
-                                </Button>
-                                <Button className="toRight wait-4" type="primary" size="large" shape="round">
-                                    More about us
-                                </Button>
-                            </Space>
-                        </Space>
-                    </Col>
-                    <Col>
-                        <img className="wait-2 toLeft half" src={image} alt=""/>
-                    </Col>
+                <Banner/>
+                <Us/>
+                <Row id="third-page" className="full flex-center">
+                    <Title>This is the 3rd page</Title>
+                </Row>
+                <Row id="fourth-page" className="full flex-center">
+                    <Title>This is the 4th page</Title>
                 </Row>
             </Content>
         </Layout>

@@ -1,4 +1,9 @@
-
+.full,
+.half,
+.quarter{
+    margin: 0;
+    padding: 0;
+}
 
 .full{
     height: 100vh;
@@ -7,5 +12,10 @@
 
 .half{
     height: 100vh;
+    width: 50vw;
+}
+
+.quarter{
+    heigth: 50vh;
     width: 50vw;
 }

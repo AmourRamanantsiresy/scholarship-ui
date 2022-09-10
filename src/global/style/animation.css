@@ -1,0 +1,90 @@
+.toTop {
+    position: relative;
+    top: 3rem;
+    opacity: 0;
+    animation: toTop 1s forwards;
+}
+
+.toBottom {
+    position: relative;
+    bottom: 3rem;
+    opacity: 0;
+    animation: toTop 1s forwards;
+}
+
+.toLeft {
+    position: relative;
+    left: 3rem;
+    opacity: 0;
+    animation: toLeft 1s forwards;
+}
+
+.toRight {
+    position: relative;
+    right: 3rem;
+    opacity: 0;
+    animation: toLeft 1s forwards;
+}
+
+@keyframes toLeft {
+    0% {
+        left: 3rem;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+@keyframes toRight {
+    0% {
+        right: 3rem;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes toTop {
+    0% {
+        top: 3rem;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes toBottom {
+    0% {
+        bottom: 3rem;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.wait-1{
+    animation-delay: 1s;
+}
+
+.wait-2{
+    animation-delay: 2s;
+}
+
+.wait-3{
+    animation-delay: 3s;
+}
+
+.wait-4{
+    animation-delay: 4s;
+}
+
+.wait-5{
+    animation-delay: 5s;
+}

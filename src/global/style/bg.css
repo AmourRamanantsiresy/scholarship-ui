@@ -1,0 +1,13 @@
+@import '~antd/es/style/themes/default.less';
+
+.bg-light{
+    background: white;
+}
+
+.bg-blue-light{
+    background: #91d5ff;
+}
+
+.bg-yellow-light{
+    background: #ffec3d;
+}

@@ -2,7 +2,8 @@
 @import "./positionnement.css";
 @import "./theme.css";
 @import '~antd/dist/antd.css';
-@import "bg.css";
-@import "font.css";
-@import "animation.css";
-@import "spaces.css";
+@import "./bg.css";
+@import "./font.css";
+@import "./animation.css";
+@import "./spaces.css";
+@import "./effect.css";

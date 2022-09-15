@@ -12,7 +12,7 @@
 }
 
 .flex-column{
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .front{

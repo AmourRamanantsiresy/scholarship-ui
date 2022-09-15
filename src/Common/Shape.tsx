@@ -1,6 +1,13 @@
-import {FC} from "react";
+import React, { FC } from "react";
 
-export const Divisor: FC<{ className: string }> = ({className}) => <div
+export const Divisor: FC<{ className: string }> = ({ className }) => (
+  <div
     className={className}
-    style={{height: "5rem", width: "1rem", borderRight: "2px solid black", marginRight: "1rem"}}></div>
-
+    style={{
+      height: "5rem",
+      width: "1rem",
+      borderRight: "2px solid black",
+      marginRight: "1rem",
+    }}
+  ></div>
+);

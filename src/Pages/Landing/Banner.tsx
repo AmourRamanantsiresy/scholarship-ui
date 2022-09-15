@@ -5,12 +5,14 @@ import { bg } from "../../Utils/styles";
 import { scrollTo } from "../../Utils/Hooks/useScroll";
 import image from "../../assets/bg1.jpg";
 import { APP_CONTEXT } from "../../Provider/context";
+import { useNavigate } from "react-router-dom";
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
 
 const Banner: FC = () => {
   // get context
+  const nav = useNavigate();
   const context = useContext(APP_CONTEXT);
   const $ = (className: string) =>
     context.scrollHandling[0] === 0 ? className : "op-0";
@@ -40,6 +42,7 @@ const Banner: FC = () => {
                 type="primary"
                 size="large"
                 shape="round"
+                onClick={()=> {nav("/loading")}}
               >
                 Get Started
               </Button>

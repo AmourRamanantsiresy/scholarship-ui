@@ -4,9 +4,9 @@ import httpClient from "../../../Utils/httpClient";
 
 const {Option} = Select;
 
-export const SelectRandom: FC<{ onChange: (id: number, name: string) => void, resource: string }> = ({
+export const SelectRandom: FC<{ onChange: (id: number, name: string) => void, resource: string, className?: string }> = ({
                                                                                                          onChange,
-                                                                                                         resource
+                                                                                                         resource, className
                                                                                                      }) => {
     const [state, setState] = useState<{ id: number, name: string, amount: number }[]>([]);
 
@@ -16,6 +16,7 @@ export const SelectRandom: FC<{ onChange: (id: number, name: string) => void, re
 
     return (
         <Select
+            className={className}
             allowClear
             style={{
                 width: "100%",

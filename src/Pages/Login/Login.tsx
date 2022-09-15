@@ -9,6 +9,7 @@ const { Item } = Form;
 
 const Login = () => {
   const navigate = useNavigate();
+  const signUp = () => {navigate('/sign-up')}
   const onFinish = (values: TCredentials) => {
     whoami(values)
       .then((res) => {
@@ -19,7 +20,7 @@ const Login = () => {
         }
       })
       .catch((e) => {
-        navigate("/error?message=user_not_fo und&code=404");
+        navigate("/error");
       });
   };
 
@@ -76,8 +77,8 @@ const Login = () => {
             <Button
               style={{ width: "100%",  marginBottom: '1rem' }}
               type="primary"
-              htmlType="submit"
               className="login-form-button"
+              onClick={signUp}
             >
               Sign Up
             </Button>

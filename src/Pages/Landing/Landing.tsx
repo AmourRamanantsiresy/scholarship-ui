@@ -12,12 +12,6 @@ const Landing: FC = () => {
       <Content>
         <Banner />
         <Us />
-        <Row id="third-page" className="full flex-center">
-          <Title>This is the 3rd page</Title>
-        </Row>
-        <Row id="fourth-page" className="full flex-center">
-          <Title>This is the 4th page</Title>
-        </Row>
       </Content>
     </Layout>
   );

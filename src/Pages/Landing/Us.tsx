@@ -26,7 +26,7 @@ const Us: FC = () => {
       <Col span={11}>
         <Row align="middle" className="flex-column" justify="space-around">
           <Title className={$("toLeft")}>
-            We are .........................
+            We are scholarship provider for all
           </Title>
           <Text className={$("toLeft wait-4")}>
             We are an association that help students to find their ideal
